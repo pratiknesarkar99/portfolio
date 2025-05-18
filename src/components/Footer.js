@@ -41,8 +41,8 @@ export const Footer = () => {
                 <img src={navIcon3} alt="Icon" />
               </a>
             </div>
-            <p>{`Built using React with <3`}</p>
-            <p>Copyright 2025. All Rights Reserved</p>
+            <p>{`Vibe Coded using GitHub Copilot with <3`}<br />
+              Copyright 2025. All Rights Reserved</p>
           </Col>
         </Row>
 

@@ -1,7 +1,7 @@
-import { useState, useEffect } from 'react';
-import { Container, Row, Col, Button } from 'react-bootstrap';
+import { useState } from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
 import headerImg from '../assets/img/header-img.svg';
-import { ArrowRightCircle, FiletypePdf } from 'react-bootstrap-icons';
+import { ArrowRightCircle, ChevronDoubleDown, FiletypePdf } from 'react-bootstrap-icons';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import navIcon1 from '../assets/img/nav-icon1.svg';
@@ -19,47 +19,10 @@ export const Banner = () => {
   const toRotate = ['Web Developer', 'Web Designer', 'UI/UX Designer'];
   const period = 2000;
 
-  // useEffect(() => {
-  //   let ticker = setInterval(() => {
-  //     tick();
-  //   }, delta);
-
-  //   return () => {
-  //     clearInterval(ticker);
-  //   };
-  // }, [text]);
-
-  // const tick = () => {
-  //   let i = loopNum % toRotate.length;
-  //   let fullText = toRotate[i];
-  //   let updatedText = isDeleting
-  //     ? fullText.substring(0, text.length - 1)
-  //     : fullText.substring(0, text.length + 1);
-
-  //   setText(updatedText);
-
-  //   if (isDeleting) {
-  //     setDelta(prevDelta => prevDelta / 2);
-  //   }
-
-  //   if (!isDeleting && updatedText === fullText) {
-  //     setIsDeleting(true);
-  //     setIndex(prevIndex => prevIndex - 1);
-  //     setDelta(period);
-  //   } else if (isDeleting && updatedText === '') {
-  //     setIsDeleting(false);
-  //     setLoopNum(loopNum + 1);
-  //     setIndex(1);
-  //     setDelta(500);
-  //   } else {
-  //     setIndex(prevIndex => prevIndex + 1);
-  //   }
-  // };
-
   return (
     <section className="banner" id="home">
       <Container>
-        <Row className="aligh-items-center">
+        <Row className="align-items-center">
           <Col xs={12} md={6} xl={7}>
             <TrackVisibility once>
               {({ isVisible }) => (
@@ -79,7 +42,7 @@ export const Banner = () => {
                     Having worked as a <b>Software Engineer</b> for about <b>4 years</b>, I have developed strong foundation in full-stack web development, system design, and product-driven engineering.
                     Currently, I am expanding my expertise into <b><u>Product Management</u></b>, leveraging my technical background to build scalable user-centric solutions.
                   </p>
-                  <div>
+                  <div className="social-container">
                     <span className="social-icon">
                       <a
                         href="https://www.linkedin.com/in/pratik-nesarkar/"
@@ -134,6 +97,13 @@ export const Banner = () => {
           </Col>
         </Row>
       </Container>
+      <div className="scroll-button-container">
+        <button className="scroll-button" onClick={() => document.getElementById('skills').scrollIntoView({ behavior: 'smooth' })}>
+          <ChevronDoubleDown className='banner-chev-down banner-img' size={25} />
+          Learn more about my skills & experience
+          <ChevronDoubleDown className='banner-chev-down banner-img' size={25} />
+        </button>
+      </div>
     </section >
   );
 };

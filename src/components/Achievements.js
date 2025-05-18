@@ -3,7 +3,7 @@ import colorSharp from '../assets/img/color-sharp.png';
 export const Achievements = () => {
 
   return (
-    <section className="experience" id="experience">
+    <section id="achievements" className="achievements">
       <div className="container">
         <div className="row">
           <div className="col-12">

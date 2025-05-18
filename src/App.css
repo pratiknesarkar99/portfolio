@@ -282,6 +282,17 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
   border-color: transparent;
 }
 
+@media (max-width: 990px) {
+  .navbar {
+    background-color: #121212;
+
+    .navbar-text {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
 /************ Banner Css ************/
 .banner {
   margin-top: 0;
@@ -370,6 +381,22 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
   animation: updown 3s linear infinite;
 }
 
+.scroll-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  :hover {
+    cursor: pointer;
+    scale: 1.1;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .banner-chev-down {
+    margin: 0px 24px;
+  }
+}
+
 @keyframes updown {
   0% {
     transform: translateY(-20px);
@@ -432,7 +459,7 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
 
 /************ Skills Css ************/
 .skill {
-  padding: 0 0 50px 0;
+  padding: 10% 0 50px 0;
   position: relative;
 }
 
@@ -755,10 +782,9 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
 
 /* ************Experience************ */
 .experience {
-  padding: 0 0 100px 0;
+  padding: 10% 0 100px 0;
   position: relative;
   background-image: url('./assets/img/color-sharp2.png');
-  background-position: center center;
   background-size: cover;
   margin-top: 18px;
 }
@@ -842,6 +868,10 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
 .achievement-item-latest {
   font-weight: bolder;
   font-size: larger;
+}
+
+.achievements {
+  margin-bottom: 4.5em;
 }
 
 /* Responsive Styles */
