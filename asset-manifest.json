@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.d84550ee.css",
-    "main.js": "/portfolio/static/js/main.e3ed026f.js",
+    "main.css": "/portfolio/static/css/main.367d5959.css",
+    "main.js": "/portfolio/static/js/main.b8a27ba2.js",
     "static/js/787.fb771931.chunk.js": "/portfolio/static/js/787.fb771931.chunk.js",
     "static/media/my-headshot.jpg": "/portfolio/static/media/my-headshot.1e298473bee6b730dad0.jpg",
     "static/media/color-sharp.png": "/portfolio/static/media/color-sharp.bea361cfef80fefc2d1e.png",
     "static/media/color-sharp2.png": "/portfolio/static/media/color-sharp2.c87586c6c2f549cb4aa6.png",
+    "static/media/iot-fuel-monitoring.jpg": "/portfolio/static/media/iot-fuel-monitoring.32ea9f827f676d1a0824.jpg",
+    "static/media/boxer-properties.jpg": "/portfolio/static/media/boxer-properties.4af9694b3f36b9327b90.jpg",
+    "static/media/portfolio-website.jpg": "/portfolio/static/media/portfolio-website.f9365a12a21518dfb3c9.jpg",
     "static/media/banner-bg.png": "/portfolio/static/media/banner-bg.cc1273af450504afe755.png",
     "static/media/header-img.svg": "/portfolio/static/media/header-img.400baa4260daac98f2b2b1ccf08761c2.svg",
-    "static/media/ehr.png": "/portfolio/static/media/ehr.20d621951307fed58e19.png",
     "static/media/CentraNo2-Bold.ttf": "/portfolio/static/media/CentraNo2-Bold.2faff7f7d3fc92a2fcd9.ttf",
     "static/media/CentraNo2-Medium.ttf": "/portfolio/static/media/CentraNo2-Medium.f94be5b326d78bb32b95.ttf",
     "static/media/CentraNo2-Book.ttf": "/portfolio/static/media/CentraNo2-Book.2b143fa4b734a3584043.ttf",
     "static/media/footer-bg.png": "/portfolio/static/media/footer-bg.7bd67c0f73571d0acc02.png",
-    "static/media/project-img3.png": "/portfolio/static/media/project-img3.675b30d2f975a1bc1d09.png",
     "static/media/contact-img.svg": "/portfolio/static/media/contact-img.62aa99e0f3b968b5d1ce9eb047f34fc7.svg",
     "static/media/bentley-logo.png": "/portfolio/static/media/bentley-logo.57d7e3599acad00d272e.png",
-    "static/media/moneyManager.jpg": "/portfolio/static/media/moneyManager.8dc3511c941beec55da6.jpg",
     "static/media/revicons.eot": "/portfolio/static/media/revicons.a77de540a38981833f9e.eot",
     "static/media/revicons.ttf": "/portfolio/static/media/revicons.57fd05d4ae650374c8de.ttf",
     "static/media/skill-express.svg": "/portfolio/static/media/skill-express.b9cbd12f27e5a742019eda9317c0c728.svg",
@@ -40,12 +40,12 @@
     "static/media/skill-javascript.svg": "/portfolio/static/media/skill-javascript.7bb08cdbe94fc2dfc1b51be8c2dae551.svg",
     "static/media/skill-css3.svg": "/portfolio/static/media/skill-css3.c56383af0fc7fa213642ae1fc5fa4b29.svg",
     "static/media/skill-html5.svg": "/portfolio/static/media/skill-html5.0c8899975fbb5345002df9b408db0cc0.svg",
-    "main.d84550ee.css.map": "/portfolio/static/css/main.d84550ee.css.map",
-    "main.e3ed026f.js.map": "/portfolio/static/js/main.e3ed026f.js.map",
+    "main.367d5959.css.map": "/portfolio/static/css/main.367d5959.css.map",
+    "main.b8a27ba2.js.map": "/portfolio/static/js/main.b8a27ba2.js.map",
     "787.fb771931.chunk.js.map": "/portfolio/static/js/787.fb771931.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d84550ee.css",
-    "static/js/main.e3ed026f.js"
+    "static/css/main.367d5959.css",
+    "static/js/main.b8a27ba2.js"
   ]
 }
