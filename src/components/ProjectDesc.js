@@ -9,6 +9,7 @@ export const ProjectDesc = ({
   liveUrl,
   fullDesc,
   onCloseDesc,
+  liveSiteBtnName = 'Live Site',
 }) => {
   return (
     <Container>
@@ -27,7 +28,7 @@ export const ProjectDesc = ({
                   {liveSite && (
                     <button className="closeButton">
                       <a href={liveUrl} target="_blank" rel="noreferrer">
-                        Live site
+                        {liveSiteBtnName}
                       </a>
                     </button>
                   )}
