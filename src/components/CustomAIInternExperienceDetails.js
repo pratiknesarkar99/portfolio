@@ -8,9 +8,8 @@ export const CustomAIInternExperienceDetails = () => {
       projName: 'n8n AgenticAI Development',
       projDesc: [
         `Engaged in learning & development of n8n workflows for interview project using low-code automation tools, utilizing TypeScript and Node.js to implement automated FAQ email support capabilities.`,
-        `Designed the super-fast email AI agent with < 60 secs. of turnaround time as opposed to earlier longer than 20 mins. wait times for simple FAQ type queries involved with manual processes.`,
+        <span>Designed the super-fast email AI agent with less than 60 secs. of turnaround time as opposed to earlier longer than 20 mins. wait times for simple FAQ type queries involved with manual processes. <a href="https://www.loom.com/share/3b901b9a61f34eb0b189432ce494a1c7?sid=2e48dea0-a25b-4bdb-b4c4-778385353ed0" target="_blank" rel="noopener noreferrer">(Click to watch the full technical demostration)</a></span>,
         `Employed agile methodologies to enhance the development process through super-fast sprints, ensuring delivery of requested features and improvements while maintaining high code quality within just 2 days of project initiation.`,
-        <a href="https://www.loom.com/share/3b901b9a61f34eb0b189432ce494a1c7?sid=2e48dea0-a25b-4bdb-b4c4-778385353ed0" target="_blank" rel="noopener noreferrer">Link to loom video showcasing detailed walkthrough of the interview project (n8n Automation System for DnA Email Support)</a>,
         // `Collaborated with a team of developers to design and implement new features, improving the overall functionality and user experience of the platform.`,
       ]
     },
@@ -36,6 +35,7 @@ export const CustomAIInternExperienceDetails = () => {
             <ExperienceProjectDetails
               projectName={project.projName}
               projectDesc={project.projDesc}
+              isCollapsible={true} // Pass a prop to enable collapsible functionality
             />
           );
         })

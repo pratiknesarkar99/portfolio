@@ -377,7 +377,8 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
   border: 1px dashed;
 }
 
-.banner .banner-img {
+.banner .banner-img,
+.contact img {
   animation: updown 3s linear infinite;
 }
 
@@ -580,7 +581,7 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
 
 /************ Projects Css ************/
 .project {
-  padding: 5% 0 10% 0;
+  padding: 5% 0 5% 0;
   /* position: relative; */
   /* background-color: black; */
   background-image: url('./assets/img/color-sharp2.png');
@@ -855,6 +856,8 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
 }
 
 .company-project-details {
+  display: flex;
+  flex-direction: column;
   margin: 0 auto;
   flex-grow: 5;
   text-align: left;
@@ -980,6 +983,18 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
   .company-project-details p {
     margin: 0.5rem 0;
   }
+}
+
+.read-more-btn {
+  color: white;
+  font-style: italic;
+  background: none;
+  /* Optional: Remove background for a cleaner look */
+  border: none;
+  /* Optional: Remove border */
+  cursor: pointer;
+  /* Optional: Add pointer cursor for better UX */
+  position: relative;
 }
 
 /************ Contact Css ************/
@@ -1195,4 +1210,57 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
 .libutton:hover {
   transform: scale(1.05);
   transition: all 0.3s ease-in-out;
+}
+
+/************ Experience Section ************/
+.experienceDetails-content .blurred-list-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.experienceDetails-content .blurred-item {
+  color: rgba(255, 255, 255, 0.6);
+  /* Faded white for partial visibility */
+  filter: blur(4px);
+  transition: filter 0.3s ease, color 0.3s ease;
+}
+
+.experienceDetails-content .blur-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2rem;
+  /* Adjust height as needed */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
+  pointer-events: none;
+}
+
+/* Position the "Show More..." button on the blurred section */
+.experienceDetails-content .read-more-btn-styled {
+  color: white;
+  font-style: italic;
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  bottom: 0.5rem;
+  /* Adjust to position it on the blurred section */
+  left: 0;
+  /* Align to the left */
+  z-index: 1;
+  /* Ensure it appears above the blur overlay */
+}
+
+/* Position the "Show Less..." button at the end of the list */
+.experienceDetails-content .read-less-btn {
+  margin-top: 1rem;
+  text-align: left;
+  display: block;
+  color: white;
+  font-style: italic;
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: relative;
 }

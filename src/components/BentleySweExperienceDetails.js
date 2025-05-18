@@ -78,7 +78,8 @@ export const BentleySweExperienceDetails = () => {
         return (
           <ExperienceProjectDetails
             projectName={project.projName}
-            projectDesc={project.projDesc}
+            projectDesc={project.projDesc} // Show only the first two points initially
+            isCollapsible={true} // Pass a prop to enable collapsible functionality
           />
         );
       })}

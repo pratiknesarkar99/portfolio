@@ -34,6 +34,7 @@ export const BentleyInternExperienceDetails = () => {
           <ExperienceProjectDetails
             projectName={project.projName}
             projectDesc={project.projDesc}
+            isCollapsible={true} // Pass a prop to enable collapsible functionality
           />
         );
       })}
