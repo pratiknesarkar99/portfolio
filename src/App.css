@@ -506,8 +506,8 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
 }
 
 .skill-slider .item img {
-  width: 50%;
-  margin: 0 auto 15px auto;
+  width: 35%;
+  margin: 0 auto 12px auto;
 }
 
 @media (max-width: 1024px) {
@@ -1262,4 +1262,18 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
   border: none;
   cursor: pointer;
   position: relative;
+}
+
+/* Style for the See More button */
+.skill .see-more-btn {
+  color: white;
+  font-style: italic;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-decoration: underline;
+  margin-top: 1rem;
+  text-align: left;
+  display: block;
+  justify-self: center;
 }

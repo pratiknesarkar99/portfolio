@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import skillReact from '../assets/img/skill-react.svg';
 import skillRedux from '../assets/img/skill-redux.svg';
 import skillNodeJs from '../assets/img/skill-node-js.svg';
@@ -13,29 +14,45 @@ import skillSql from '../assets/img/skill-sql.svg';
 import skillJest from '../assets/img/skill-jest.svg';
 import dotNet from '../assets/img/dotnet.svg';
 import skillGit from '../assets/img/skill-git.svg';
+import skillN8n from '../assets/img/n8n-color.svg';
+import skillVoiceFlow from '../assets/img/voice-flow.jpg';
+import skillNotion from '../assets/img/notion.png';
+import skillSupabase from '../assets/img/supabase.png';
+import skillOpenAi from '../assets/img/open-ai.svg';
 
 import colorSharp from '../assets/img/color-sharp.png';
 
 export const Skills = () => {
-  const responsive = {
-    superLargeDesktop: {
-      // the naming can be any, depends on you.
-      breakpoint: { max: 4000, min: 3000 },
-      items: 5,
-    },
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 3,
-    },
-    tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 2,
-    },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 1,
-    },
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  const toggleExpand = () => {
+    setIsExpanded(!isExpanded);
   };
+
+  const skills = [
+    { src: skillN8n, name: 'n8n' },
+    { src: skillVoiceFlow, name: 'Voiceflow' },
+    { src: skillNotion, name: 'Notion' },
+    { src: skillSupabase, name: 'Supabase' },
+    { src: skillOpenAi, name: 'OpenAi' },
+    { src: skillReact, name: 'React Js' },
+    { src: skillRedux, name: 'Redux' },
+    { src: skillNodeJs, name: 'Node Js' },
+    { src: skillExpress, name: 'Express' },
+    { src: skillMongoDB, name: 'MongoDB' },
+    { src: skillJavaScript, name: 'JavaScript' },
+    { src: skillHtml, name: 'HTML' },
+    { src: skillCss, name: 'CSS' },
+    { src: devops, name: 'Azure DevOps' },
+    { src: skillTypeScript, name: 'TypeScript' },
+    { src: skillJava, name: 'Java' },
+    { src: skillSql, name: 'SQL' },
+    { src: skillJest, name: 'Jest' },
+    { src: dotNet, name: '.Net' },
+    { src: skillGit, name: 'Git' },
+  ];
+
+  const visibleSkills = isExpanded ? skills : skills.slice(0, 15);
 
   return (
     <section className="skill" id="skills">
@@ -44,69 +61,20 @@ export const Skills = () => {
           <div className="col-12">
             <div className="skill-bx wow zoomIn">
               <h2 className="header">Skills</h2>
-
               <div className="skill-slider">
-                <div className="item">
-                  <img src={skillReact} alt="React" />
-                  <h5>React Js</h5>
-                </div>
-                <div className="item">
-                  <img src={skillRedux} alt="Redux" />
-                  <h5>Redux</h5>
-                </div>
-                <div className="item">
-                  <img src={skillNodeJs} alt="NodeJs" />
-                  <h5>Node Js</h5>
-                </div>
-                <div className="item">
-                  <img src={skillExpress} alt="Express" />
-                  <h5>Express</h5>
-                </div>
-                <div className="item">
-                  <img src={skillMongoDB} alt="MongoDB" />
-                  <h5>MongoDB</h5>
-                </div>
-                <div className="item">
-                  <img src={skillJavaScript} alt="JavaScript" />
-                  <h5>JavaScript</h5>
-                </div>
-                <div className="item">
-                  <img src={skillHtml} alt="HTML" />
-                  <h5>HTML</h5>
-                </div>
-                <div className="item">
-                  <img src={skillCss} alt="CSS" />
-                  <h5>CSS</h5>
-                </div>
-                <div className="item">
-                  <img src={devops} alt="jQuery" />
-                  <h5>Azure DevOps</h5>
-                </div>
-                <div className="item">
-                  <img src={skillTypeScript} alt="TypeScript" />
-                  <h5>TypeScript</h5>
-                </div>
-                <div className="item">
-                  <img src={skillJava} alt="Java" />
-                  <h5>Java</h5>
-                </div>
-                <div className="item">
-                  <img src={skillSql} alt="SQL" />
-                  <h5>SQL</h5>
-                </div>
-                <div className="item">
-                  <img src={skillJest} alt="Jest" />
-                  <h5>Jest</h5>
-                </div>
-                <div className="item">
-                  <img src={dotNet} alt="dotNet" />
-                  <h5>.Net</h5>
-                </div>
-                <div className="item">
-                  <img src={skillGit} alt="Git" />
-                  <h5>Git</h5>
-                </div>
+                {visibleSkills.map((skill, index) => (
+                  <div className="item" key={index}>
+                    <img src={skill.src} alt={skill.name} />
+                    <h5>{skill.name}</h5>
+                  </div>
+                ))}
               </div>
+              <button
+                className="see-more-btn"
+                onClick={toggleExpand}
+              >
+                {isExpanded ? 'See Less...' : 'See More...'}
+              </button>
             </div>
           </div>
         </div>
