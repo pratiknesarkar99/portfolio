@@ -98,6 +98,15 @@ p.danger {
 /************ Navbar Css ************/
 nav.navbar {
   padding: 18px 0;
+
+  @media (max-width: 768px) {
+    padding: 12px 0;
+  }
+
+  @media (max-width: 480px) {
+    padding: 8px 0;
+  }
+
   position: fixed;
   width: 100%;
   top: 0;
@@ -127,6 +136,11 @@ nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
 nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   opacity: 1;
 }
+
+/* 
+.navbar-collapse.collapse.show {
+  background-color: black;
+} */
 
 span.navbar-text {
   display: flex;
@@ -377,7 +391,7 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
 /* ************ About Css ************/
 .about {
   background: linear-gradient(90.21deg, #4a2fbd -5.91%, #aa367c 111.58%);
-  padding: 10% 0 10% 0;
+  padding: 5% 0 14% 0;
 }
 
 .about img {
@@ -409,8 +423,7 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
   color: #d4d4d4;
   font-size: 18px;
   letter-spacing: 0.8px;
-  line-height: 1.5em;
-  margin: 14px 0 75px 0;
+  margin: 15px 0;
 }
 
 .heading {
@@ -467,6 +480,60 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
 .skill-slider .item img {
   width: 50%;
   margin: 0 auto 15px auto;
+}
+
+@media (max-width: 1024px) {
+  .skill h2 {
+    font-size: 35px;
+  }
+
+  .skill p {
+    font-size: 16px;
+  }
+
+  .skill-slider .item {
+    width: 30%;
+  }
+
+  .skill-slider .item img {
+    width: 60%;
+  }
+}
+
+@media (max-width: 768px) {
+  .skill h2 {
+    font-size: 28px;
+  }
+
+  .skill p {
+    font-size: 14px;
+  }
+
+  .skill-slider .item {
+    width: 40%;
+  }
+
+  .skill-slider .item img {
+    width: 70%;
+  }
+}
+
+@media (max-width: 480px) {
+  .skill h2 {
+    font-size: 22px;
+  }
+
+  .skill p {
+    font-size: 12px;
+  }
+
+  .skill-slider .item {
+    width: 50%;
+  }
+
+  .skill-slider .item img {
+    width: 80%;
+  }
 }
 
 .background-image-left {
@@ -700,7 +767,6 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
   background: #151515;
   border-radius: 64px;
   text-align: center;
-  /* padding: 60px 50px; */
   padding: 2rem 1rem;
   margin-top: -3rem;
 }
@@ -720,7 +786,6 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
 
 .experienceDetails {
   padding: 2rem 4rem;
-  /* border: 2px solid red; */
 }
 
 .experienceDetailsHeader {
@@ -737,12 +802,19 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
   border: 2px solid rgba(255, 255, 255, 0.5);
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .company-logo {
-  width: 10%;
+  width: 20%;
   margin: 0 4rem;
   flex-grow: 1;
+}
+
+.company-logo-icon {
+  max-width: 200px;
+  width: 90%;
+  margin-right: 12px;
 }
 
 .company-details {
@@ -752,7 +824,6 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
 
 .company-project-name {
   width: 10%;
-  margin: 0 4rem;
   flex-grow: 1;
   text-align: start;
 }
@@ -771,6 +842,114 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
 .achievement-item-latest {
   font-weight: bolder;
   font-size: larger;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .experience h2 {
+    font-size: 35px;
+  }
+
+  .experience p {
+    font-size: 16px;
+  }
+
+  .experienceDetails {
+    padding: 1.5rem 3rem;
+  }
+
+  .experienceDetails-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .company-logo {
+    width: 30%;
+    margin: 0 2rem;
+  }
+
+  .company-project-name {
+    width: 100%;
+    margin: 1rem 0;
+    text-align: center;
+  }
+
+  .company-project-details {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .experience h2 {
+    font-size: 28px;
+  }
+
+  .experience p {
+    font-size: 14px;
+  }
+
+  .experienceDetails {
+    padding: 1rem 2rem;
+  }
+
+  .company-logo {
+    width: 40%;
+    margin: 0 1rem;
+  }
+
+  .company-logo-icon {
+    max-width: 150px;
+  }
+
+  .company-project-name {
+    text-align: center;
+    margin: 1rem 0;
+  }
+
+  .company-project-details p {
+    margin: 1rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .experience h2 {
+    font-size: 22px;
+  }
+
+  .experience p {
+    font-size: 12px;
+  }
+
+  .experienceDetails {
+    padding: 1rem;
+  }
+
+  .experienceDetails-content {
+    padding: 0.5rem;
+    margin: 0.5rem;
+  }
+
+  .company-logo {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .company-logo-icon {
+    max-width: 100px;
+  }
+
+  .company-project-name {
+    text-align: center;
+    margin: 0.5rem 0;
+  }
+
+  .company-project-details {
+    text-align: center;
+  }
+
+  .company-project-details p {
+    margin: 0.5rem 0;
+  }
 }
 
 /************ Contact Css ************/
@@ -974,11 +1153,16 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
   outline: none;
   text-decoration: none !important;
   color: #ffffff !important;
-  width: 200px;
-  height: 32px;
-  border-radius: 16px;
+  width: 100%;
+  max-width: 250px;
+  height: 50px;
+  border-radius: 10px;
   background-color: #0A66C2;
   display: inline-flex;
-  margin-bottom: 20px;
-  height: 40px;
+  margin: 20px 0;
+}
+
+.libutton:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
 }

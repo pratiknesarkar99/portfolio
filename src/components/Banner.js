@@ -106,7 +106,7 @@ export const Banner = () => {
                         <img src={navIcon3} alt="github" />
                       </a>
                     </span>
-                    <a className="resume-button" href="https://drive.google.com/file/d/16zxVPcTQ9xr6EAR5-hUrsc25CH-dqx56/view?usp=sharing">
+                    <a className="resume-button" href="https://drive.google.com/file/d/1upB5daZTTm4gw0PRTVERlYqsXhvv5-ws/view?usp=sharing">
                       View My Resume <FiletypePdf size={25} />
                     </a>
                   </div>

@@ -1,8 +1,9 @@
 import colorSharp from '../assets/img/color-sharp.png';
-import { SweExperienceDetails } from './SweExperienceDetails';
-import { InternExperienceDetails } from './InternExperienceDetails';
+import { BentleySweExperienceDetails } from './BentleySweExperienceDetails';
+import { BentleyInternExperienceDetails } from './BentleyInternExperienceDetails';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+import { CustomAIInternExperienceDetails } from './CustomAIInternExperienceDetails';
 
 export const Experience = () => {
   const responsive = {
@@ -31,8 +32,9 @@ export const Experience = () => {
           <div className="col-12">
             <div className="experience-bx wow zoomIn">
               <h2 className="header">Experience</h2>
-              <SweExperienceDetails />
-              <InternExperienceDetails />
+              <CustomAIInternExperienceDetails />
+              <BentleySweExperienceDetails />
+              <BentleyInternExperienceDetails />
             </div>
           </div>
         </div>
