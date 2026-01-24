@@ -5,11 +5,12 @@ import { ExperienceProjectDetails } from './ExperiencePojectDetails';
 export const CustomAICoopExperienceDetails = () => {
   const companyProjects = [
     {
-      projName: 'AgenticOS Development',
+      projName: 'AgenticOS - Claude Agent Web UI',
       projDesc: [
-        `[Placeholder] Description of work on the AgenticOS project.`,
-        `[Placeholder] Key contribution or achievement.`,
-        `[Placeholder] Technologies used or skills applied.`,
+        `Developing a multi-tenant web application enabling users to interact with Claude AI using their Pro/Max subscriptions, featuring workspaces ("Spaces") for managing multiple chat sessions.`,
+        `Building real-time streaming chat functionality using WebSocket connections and the Claude Agent SDK, with session persistence for seamless conversation resumption.`,
+        `Implementing dual authentication architecture using Clerk for user identity management and Anthropic OAuth (PKCE) for secure API access with per-user credential isolation.`,
+        `Designing React 18 frontend with TypeScript and Vite, integrating Convex for real-time serverless database operations and building a file browser/editor for project management.`,
       ]
     },
   ];
