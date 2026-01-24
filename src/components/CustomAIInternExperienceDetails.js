@@ -26,7 +26,7 @@ export const CustomAIInternExperienceDetails = () => {
         </div>
         <div className="company-details">
           <h2>Custom AI Studio</h2>
-          <h4>AI Development Intern (May 2025 - Present)</h4>
+          <h4>AI Development Intern (May 2025 - August 2025)</h4>
         </div>
       </div>
       {
