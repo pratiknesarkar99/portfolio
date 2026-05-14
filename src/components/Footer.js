@@ -42,7 +42,7 @@ export const Footer = () => {
               </a>
             </div>
             <p>{`Vibe Coded using GitHub Copilot with <3`}<br />
-              Copyright 2025. All Rights Reserved</p>
+              Copyright 2026. All Rights Reserved</p>
           </Col>
         </Row>
 

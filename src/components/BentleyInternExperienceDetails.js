@@ -19,7 +19,7 @@ export const BentleyInternExperienceDetails = () => {
     <div className="experienceDetails">
       <div className="experienceDetailsHeader">
         <div className="company-logo">
-          <a href="https://www.bentley.com/" target="_blank">
+          <a href="https://www.bentley.com/" target="_blank" rel="noreferrer">
             <img src={bentleyLogo} className='company-logo-icon' alt="React" />
             <Link45deg color='#fff'></Link45deg>
           </a>

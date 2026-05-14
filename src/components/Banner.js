@@ -37,10 +37,16 @@ export const Banner = () => {
                   <h3>Masters in Management Information Systems</h3>
                   <h3>Texas A&M University '26</h3>
                   <p>
-                    A graduate student at the Mays Business School, with a <b>4.0 GPA</b> expected to graduate by <u>May 2026</u>!
-                    I hold a B.Eng. in Information Technology with a GPA of 3.90/4.0.
-                    Having worked as a <b>Software Engineer</b> for about <b>4 years</b>, I have developed strong foundation in full-stack web development, system design, and product-driven engineering.
-                    Currently, I am expanding my expertise into <b><u>Product Management</u></b>, leveraging my technical background to build scalable user-centric solutions.
+                    <b>Software Developer</b> and recent Texas A&M graduate (4.0 GPA), combining nearly <b>4 years
+                      of industry experience</b> with a strong foundation in full-stack engineering, system design, and <u>AI-driven development</u>. Previously worked at Bentley
+                    Systems building scalable solutions across enterprise platforms. Passionate about leveraging technology, business strategy, and
+                    user-centric thinking to solve complex problems at scale. Actively exploring opportunities in <b>Software Development, Tech Consulting, &
+                      Technical Product Management</b>.
+
+
+                    {/* <b>Professional Software Developer</b> and recent graduate from Texas A&M University, with a M.S. in Information Systems <i>(4.0 GPA)</i>, Whoop!.
+                    Prior to that, I pursued a B.Eng. in Information Technology followed by a professional experience in <b>Software Engineer</b> for about <b>4 years</b>. During this time I have developed strong foundation in full-stack web development, system design, and product-driven engineering.
+                    Currently, I am expanding my expertise in system design and AI development, leveraging my technical background to build scalable user-centric solutions. */}
                   </p>
                   <div className="social-container">
                     <span className="social-icon">
@@ -69,7 +75,7 @@ export const Banner = () => {
                         <img src={navIcon3} alt="github" />
                       </a>
                     </span>
-                    <a className="resume-button" href="https://drive.google.com/file/d/1upB5daZTTm4gw0PRTVERlYqsXhvv5-ws/view?usp=sharing">
+                    <a className="resume-button" href="https://drive.google.com/file/d/1N5ab3N2pcTxdiCvRLuj2IctfSFhYwtDN/view?usp=sharing " target="_blank" rel="noreferrer">
                       View My Resume <FiletypePdf size={25} />
                     </a>
                   </div>
