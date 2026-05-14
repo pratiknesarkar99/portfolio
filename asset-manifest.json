@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.2125ee1a.css",
-    "main.js": "/portfolio/static/js/main.2db8fc2b.js",
+    "main.js": "/portfolio/static/js/main.e5762af8.js",
     "static/js/787.fb771931.chunk.js": "/portfolio/static/js/787.fb771931.chunk.js",
-    "static/media/my-headshot.jpg": "/portfolio/static/media/my-headshot.1e298473bee6b730dad0.jpg",
     "static/media/color-sharp.png": "/portfolio/static/media/color-sharp.bea361cfef80fefc2d1e.png",
+    "static/media/my-headshot.jpg": "/portfolio/static/media/my-headshot.e50ee89a2b9464d7ea42.jpg",
     "static/media/color-sharp2.png": "/portfolio/static/media/color-sharp2.c87586c6c2f549cb4aa6.png",
     "static/media/iot-fuel-monitoring.jpg": "/portfolio/static/media/iot-fuel-monitoring.32ea9f827f676d1a0824.jpg",
     "static/media/boxer-properties.jpg": "/portfolio/static/media/boxer-properties.4af9694b3f36b9327b90.jpg",
@@ -44,11 +44,11 @@
     "static/media/skill-css3.svg": "/portfolio/static/media/skill-css3.c56383af0fc7fa213642ae1fc5fa4b29.svg",
     "static/media/skill-html5.svg": "/portfolio/static/media/skill-html5.0c8899975fbb5345002df9b408db0cc0.svg",
     "main.2125ee1a.css.map": "/portfolio/static/css/main.2125ee1a.css.map",
-    "main.2db8fc2b.js.map": "/portfolio/static/js/main.2db8fc2b.js.map",
+    "main.e5762af8.js.map": "/portfolio/static/js/main.e5762af8.js.map",
     "787.fb771931.chunk.js.map": "/portfolio/static/js/787.fb771931.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2125ee1a.css",
-    "static/js/main.2db8fc2b.js"
+    "static/js/main.e5762af8.js"
   ]
 }
