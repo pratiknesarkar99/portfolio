@@ -1,6 +1,6 @@
 import { Link45deg } from 'react-bootstrap-icons';
 import bentleyLogo from '../assets/img/bentley-logo.png';
-import { ExperienceProjectDetails } from './ExperiencePojectDetails';
+import { ExperienceProjectDetails } from './ExperienceProjectDetails';
 
 export const BentleyInternExperienceDetails = () => {
   const companyProjects = [

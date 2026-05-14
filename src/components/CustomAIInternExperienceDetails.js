@@ -1,6 +1,6 @@
 import { Link, Link45deg } from 'react-bootstrap-icons';
 import caisLogo from '../assets/img/cais-logo.jpg';
-import { ExperienceProjectDetails } from './ExperiencePojectDetails';
+import { ExperienceProjectDetails } from './ExperienceProjectDetails';
 
 export const CustomAIInternExperienceDetails = () => {
   const companyProjects = [
