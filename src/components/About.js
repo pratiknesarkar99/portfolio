@@ -22,9 +22,9 @@ export const About = () => {
               <br />
               <br />
 
-              <span style={{ display: "flex", fontSize: "smaller", textAlign: "justify" }}>I am currently pursuing my Master’s at Texas A&M University with a major in Management Information Systems. My focus is on leveraging processes, tools, and technologies to help organizations effectively manage IT products, drive revenue growth, and make a meaningful impact.
-
-                I am a certified 'Professional SCRUM Master', a certification issued by Scrum.org that demonstrates my proficiency in efficiently managing SCRUM teams and my deep understanding of agile project lifecycle methodologies. I earned this certification after successfully passing the SCRUM assessment on September 15, 2024.
+              <span style={{ display: "flex", fontSize: "smaller", textAlign: "justify" }}>I recently completed my Master’s at Texas A&M University with a Management Information Systems major. My focus is on leveraging processes, tools, and technologies to help organizations effectively manage IT products, drive revenue growth, and make a meaningful impact.
+                While pursuing my Master’s, I have been actively involved in various projects and internships that have allowed me to apply my skills in software development, AI backed systems, and data analysis. I am particularly interested in the intersection of technology and business strategy, and I am passionate about using my technical expertise to solve complex problems and drive innovation.
+                <br />I am also a certified 'Professional SCRUM Master', a certification issued by Scrum.org that demonstrates my proficiency in efficiently managing SCRUM teams and my deep understanding of agile project lifecycle methodologies. I earned this certification after successfully passing the SCRUM assessment on September 15, 2024.
                 <br />
                 <br />
 
@@ -40,7 +40,7 @@ export const About = () => {
               </span>
             </p>
 
-            <a class="libutton" href="https://www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=pratik-nesarkar" target="_blank"><span>Follow me on <b>LinkedIn</b></span></a>
+            <a class="libutton" href="https://www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=pratik-nesarkar" target="_blank" rel="noreferrer"><span>Follow me on <b>LinkedIn</b></span></a>
           </div>
           {/* <Col size={12} md={4}>
             <TrackVisibility>
