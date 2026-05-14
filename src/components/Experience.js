@@ -4,6 +4,7 @@ import { BentleyInternExperienceDetails } from './BentleyInternExperienceDetails
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import { CustomAIInternExperienceDetails } from './CustomAIInternExperienceDetails';
+import { CustomAICoopExperienceDetails } from './CustomAICoopExperienceDetails';
 
 export const Experience = () => {
   const responsive = {
@@ -32,6 +33,7 @@ export const Experience = () => {
           <div className="col-12">
             <div className="experience-bx wow zoomIn">
               <h2 className="header">Experience</h2>
+              <CustomAICoopExperienceDetails />
               <CustomAIInternExperienceDetails />
               <BentleySweExperienceDetails />
               <BentleyInternExperienceDetails />

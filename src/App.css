@@ -849,8 +849,8 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
 }
 
 .company-project-name {
-  width: 10%;
-  flex-grow: 1;
+  width: 100%;
+  flex-basis: 100%;
   text-align: start;
 }
 
